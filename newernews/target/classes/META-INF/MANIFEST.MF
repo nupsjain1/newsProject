@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1458801390424
+Build-Jdk: 1.8.0_72
+Built-By: nupur
+Bundle-Description: com.ttnd - newernews
+Bundle-ManifestVersion: 2
+Bundle-Name: newernews
+Bundle-SymbolicName: com.ttnd.newernews
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.ttnd.newernews;uses:="org.osgi.service.component";ve
+ rsion="0.0.1"
+Import-Package: org.osgi.framework;version="[1.5,2)",org.osgi.service.co
+ mponent;version="[1.1,2)",org.slf4j;version="[1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Service-Component: OSGI-INF/com.ttnd.newernews.SimpleDSComponent.xml
+Tool: Bnd-3.0.0.201509101326
