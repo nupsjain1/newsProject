@@ -4,15 +4,57 @@
     xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="nt:unstructured"
     sling:resourceType="news">
-    <entertainment jcr:primaryType="nt:unstructured"/>
+    
+    <entertainment
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="news/list"
+        title="Entertainment">
+        <news_enter_0 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+        
+        <news_enter_1 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+        
+    <news_enter_2 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/></entertainment>
 
-    <sports jcr:primaryType="nt:unstructured"/>
+    <sports
+    	jcr:primaryType="nt:unstructured"
+        sling:resourceType="news/list"
+        title="Sports"/>
 
-    <ttnd jcr:primaryType="nt:unstructured"/>
+    <ttnd 
+    	jcr:primaryType="nt:unstructured"
+        sling:resourceType="news/list"
+        title="TTND"/>
 
-    <health jcr:primaryType="nt:unstructured"/>
+    <health 
+    	jcr:primaryType="nt:unstructured"
+        sling:resourceType="news/list"
+        title="Health"/>
 
-    <lifestyle jcr:primaryType="nt:unstructured"/>
+    <lifestyle 
+    	jcr:primaryType="nt:unstructured"
+        sling:resourceType="news/list"
+        title="Lifestyle"/>
 
-    <education jcr:primaryType="nt:unstructured"/>
+    <education 
+    	jcr:primaryType="nt:unstructured"
+        sling:resourceType="news/list"
+        title="Education"/>
 </jcr:root>
