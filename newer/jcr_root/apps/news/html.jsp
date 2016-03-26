@@ -22,15 +22,8 @@
 <%@taglib prefix="sling" uri="http://sling.apache.org/taglibs/sling/1.0"%>
 <sling:defineObjects/>
 
-<h1><%= resource.adaptTo(ValueMap.class).get("jcr:title") %></h1>
-<p><%= resource.adaptTo(ValueMap.class).get("jcr:description") %></p>
-
+<%@include file="header.jsp"%>
+<%@include file="topnav.jsp"%>
 <%	session.setAttribute("user","admin");
 %>
-
-<a href="/content/newernews/entertainment.html" >Entertainment</a>
-<a href="/content/newernews/sports.html" >Sports</a>
-<a href="/content/newernews/ttnd.html" >TTN-Digital</a>
-<a href="/content/newernews/health.html" >Health</a>
-<a href="/content/newernews/lifestyle.html" >Lifestyle</a>
-<a href="/content/newernews/education.html" >Education</a>
+<%@include file="footer.jsp"%>

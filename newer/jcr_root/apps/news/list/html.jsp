@@ -5,8 +5,12 @@
 <sling:defineObjects />
 
 <title>Newer Times|<%= resource.adaptTo(ValueMap.class).get("title") %></title>
+
+<%@include file="/apps/news/header.jsp"%>
+<%@include file="/apps/news/topnav.jsp"%>
+
 <center>
-	<h1><%= resource.adaptTo(ValueMap.class).get("title") %></h1>
+	<h1 style="margin:2%"><%= resource.adaptTo(ValueMap.class).get("title") %></h1>
 </center>
 <%
 Iterator<Resource> resourceIterator = resource.listChildren();
@@ -110,3 +114,5 @@ while (resourceIterator.hasNext()) {
 </div>
 <%
 }%>
+
+<%@include file="/apps/news/footer.jsp"%>
