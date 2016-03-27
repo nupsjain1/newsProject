@@ -2,7 +2,11 @@
 	import="org.apache.sling.api.resource.*, javax.jcr.*"%>
 <%@taglib prefix="sling" uri="http://sling.apache.org/taglibs/sling/1.0"%>
 <sling:defineObjects />
-
+<head>
+</head>
+<body>
+<%@include file="/apps/news/header.jsp"%>
+<%@include file="/apps/news/topnav.jsp"%> 
 <%
 HttpSession session=request.getSession();
 if(session!=null && session.getAttribute("user")!=null && session.getAttribute("user").equals("admin"))
@@ -15,14 +19,15 @@ if(session!=null && session.getAttribute("user")!=null && session.getAttribute("
 %>
 <form method="POST" action=<%=resource.getPath()%>
 	enctype="multipart/form-data">
-	Title: <input type="text" name="title" value="<%=title %>" /> <br />
+	Title: <input type="text" name="title" value="<%=title %>" class="form-control"/> <br />
 	Description:
-	<textarea name="description"><%=description %></textarea>
-	<br /> Date of Publish: <input type="text" name="dateofpublish"
-		value=<%=dateofpublish%> /> <br /> Link: <input type="url"
-		name="link" value=<%=link %> /> <input type="hidden" name=":redirect"
-		value="/content/newernews/entertainment.html" /> <input type="submit"
-		value="Save Changes" />
+	<textarea name="description" class="form-control"><%=description %></textarea>
+	<br /> 
+	Date of Publish: <input type="text" name="dateofpublish" value=<%=dateofpublish%> class="form-control" /> 
+	<br /> 
+	Link: <input type="url"	name="link" value=<%=link %> class="form-control" /> 
+	<input type="hidden" name=":redirect" value="<%=resource.getPath() %>.html" /> 
+	<input type="submit" value="Save Changes" class="form-control"/>
 </form>
 
 <%
@@ -30,3 +35,5 @@ if(session!=null && session.getAttribute("user")!=null && session.getAttribute("
 	response.sendRedirect("/403.html");
 }
 %>
+</body>
+<%@include file="/apps/news/footer.jsp"%> 

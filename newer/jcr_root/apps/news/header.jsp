@@ -4,7 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<link rel="stylesheet" href="/content/css/bootstrap.min.css">
+  <script src="/content/js/jquery.min.js"></script>
+  <script src="/content/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="/content/js/script.js"></script>
+<link rel="stylesheet" type="text/css" href="/content/css/style.css">
 <style type="text/css">
 #left {
 	width: 60%;
@@ -12,7 +17,7 @@
 	float: left;
 	margin: 0 auto;
 	position: relative;
-	background: black;
+	background: gray;
 }
 
 #right {
@@ -22,7 +27,7 @@
 	float: right;
 	margin: 0 auto;
 	position: relative;
-	background: black;
+	background: gray;
 }
 
 h3 {
@@ -31,14 +36,13 @@ h3 {
 }
 }
 </style>
+
 </head>
 <body>
 	<div id=left>
-		<h3>Logo Image</h3>
+		<img src="/content/images/logo.jpg" height="85px" width="380px"/>
 
 	</div>
 	<div id=right>
 		<h3>weather forcast</h3>
 	</div>
-</body>
-</html>

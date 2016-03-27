@@ -1,0 +1,90 @@
+
+#top_login_outer {
+    position: absolute;
+    right: 133px;
+    top: 0;
+    width: 300px;
+}
+#top_login_form_trigger {
+    background: url("/bg/down_arrow_circle.gif") no-repeat scroll right 0 transparent;
+    border-left: 1px solid #CECECE;
+    border-right: 1px solid #CECECE;
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 0 24px 0 10px;
+}
+#top_login_form_trigger.active {
+    background: url("/bg/down_arrow_circle.gif") no-repeat scroll right -19px #666666;
+    color: #FFFFFF;
+}
+#top_login_form {
+    background: none repeat scroll 0 0 #666666;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 2px 2px #444444;
+    color: #CECECE;
+    cursor: auto;
+    padding: 10px;
+    position: absolute;
+    right: 1px;
+    top: -999px;
+    width: 280px;
+    z-index: 1000;
+}
+#top_login_outer #top_login_form.shown {
+    top: 18px;
+}
+#top_login_form label {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0 #000000;
+}
+#top_login_form input.text {
+    background: none repeat scroll 0 0 #F0F0F0;
+    border: 1px solid #16171A;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+    color: #222222;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    width: 228px;
+}
+#top_login_form .submitbtn {
+    border: 0 none;
+    width: 100px;
+}
+#top_login_form #top_login_menu li {
+    border-bottom: 1px solid #444444;
+    border-top: 1px solid #888888;
+    clear: both;
+}
+#top_login_form a, #top_login_form a:visited {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    padding: 3px 5px;
+    width: 130px;
+}
+#top_login_form a:hover, #top_login_form a:focus {
+    background: none repeat scroll 0 0 #555555;
+    text-decoration: none;
+}
+
+form .submitbtn {
+    background: blue no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 0 #0A5482;
+    text-transform: uppercase;
+    width: 115px;
+}
+.floatright {
+    display: inline;
+    float: right;
+}
