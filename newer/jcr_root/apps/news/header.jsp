@@ -44,6 +44,6 @@ h3 {
 		<img src="/content/images/logo.jpg" height="85px" width="380px"/>
 
 	</div>
-	<div id=right>
-		<h3>weather forcast</h3>
+	<div id="right" class="weather">
+		
 	</div>

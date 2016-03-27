@@ -1,5 +1,20 @@
 $(document).ready(function() {
-
+	navigator.geolocation.getCurrentPosition(function(position) {
+		 
+		 $.ajax({
+			    url:"http://api.openweathermap.org/data/2.5/weather?lat="+position.coords.latitude+"&lon="+position.coords.longitude+"&units=metric&appid=26e6296659feb17ae6a48bb25aa6fe05",
+			    datatype:"json",
+			    success:function(data)
+			    {
+			    	$(".weather").html("<h3>weather forcast</h3><br>"+"Place:"+data.name+"<br>Max Temp:"+data.main.temp_max+"<br>Min Temp:"+data.main.temp_min);
+			    },
+			    error:function()
+			    {
+			    	console.log("error");
+			    }
+			    	
+			    });
+		});
 					$.fn.hoverIntent = function(handlerIn, handlerOut, selector) {
 						var cfg = {
 							interval : 100,
