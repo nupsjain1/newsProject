@@ -34,10 +34,6 @@
 						<p>
 							<c:out value="${sling:getValue(myProps,'description',String.class)}" />
 						</p>
-						<span> 
-							<a href="${sling:getValue(myProps,'link',String.class)}">Follow Up!</a>
-						</span>
-
 						<div class="news_footer">
 							<div class="share">
 								<!-- Share buttons -->

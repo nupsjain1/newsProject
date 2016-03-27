@@ -15,7 +15,6 @@ if(session!=null && session.getAttribute("user")!=null && session.getAttribute("
 	String title=res.get("title").toString();
 	String description=res.get("description").toString();
 	String dateofpublish=res.get("dateofpublish").toString();
-	String link=res.get("link").toString();
 %>
 <form method="POST" action=<%=resource.getPath()%>
 	enctype="multipart/form-data">
@@ -25,7 +24,6 @@ if(session!=null && session.getAttribute("user")!=null && session.getAttribute("
 	<br /> 
 	Date of Publish: <input type="text" name="dateofpublish" value=<%=dateofpublish%> class="form-control" /> 
 	<br /> 
-	Link: <input type="url"	name="link" value=<%=link %> class="form-control" /> 
 	<input type="hidden" name=":redirect" value="<%=resource.getPath() %>.html" /> 
 	<input type="submit" value="Save Changes" class="form-control"/>
 </form>

@@ -26,11 +26,6 @@ ValueMap vMap = resource.adaptTo(ValueMap.class);
 			<span><%=vMap.get("dateofpublish",String.class) %></span>
 			<div class="desciption">
 				<span><%=vMap.get("description",String.class) %></span>
-				<div class="link">
-					<span> <a href="<%=vMap.get("link",String.class) %>">Follow
-							Up!</a>
-					</span>
-				</div>
 			</div>
 		</div>
 	</div>

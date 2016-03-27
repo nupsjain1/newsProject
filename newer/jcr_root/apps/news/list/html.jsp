@@ -40,9 +40,6 @@ while (resourceIterator.hasNext()) {
 			<a href="<%=childResource.getPath()%>.html"><h2><%=vMap.get("title",String.class) %></h2></a>
 			<h3><%=vMap.get("dateofpublish",String.class) %></h3>
 			<p><%=vMap.get("description",String.class) %></p>
-			<span> <a href="<%=vMap.get("link",String.class) %>">Follow
-					Up!</a>
-			</span>
 			<div class="news_footer">
 				<div class="share">
 					<!-- Share buttons -->
@@ -80,8 +77,6 @@ while (resourceIterator.hasNext()) {
 			<a href="<%=childResource.getPath()%>.html"><h2><%=vMap.get("title",String.class) %></h2></a>
 			<h3><%=vMap.get("dateofpublish",String.class) %></h3>
 			<p><%=vMap.get("description",String.class) %></p>
-			<span> <a href="<%=vMap.get("link",String.class) %>">Follow
-					Up!</a>
 			</span>
 
 			<div class="news_footer">
