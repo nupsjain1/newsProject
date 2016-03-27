@@ -6,7 +6,7 @@ $(document).ready(function() {
 			    datatype:"json",
 			    success:function(data)
 			    {
-			    	$(".weather").html("<h3>weather forcast</h3><br>"+"Place:"+data.name+"<br>Max Temp:"+data.main.temp_max+"<br>Min Temp:"+data.main.temp_min);
+			    	$(".weather").html("<h3>weather forcast</h3><br>"+"Place : "+data.name+"<br>Temprature : "+data.main.temp+"<br>Max : "+data.main.temp_max+"<br>Min : "+data.main.temp_min);
 			    },
 			    error:function()
 			    {
