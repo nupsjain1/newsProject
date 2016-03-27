@@ -4,14 +4,15 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <sling:defineObjects />
 <head>
-<title>Newer Times|<%= resource.adaptTo(ValueMap.class).get("title") %></title></head>
+<title>Newer Times|<%= resource.adaptTo(ValueMap.class).get("title") %></title>
+</head>
 <body>
 <%@include file="/apps/news/header.jsp"%>
 <%@include file="/apps/news/topnav.jsp"%>
 
-	<center>
-		<h1><%= resource.adaptTo(ValueMap.class).get("title") %></h1>
-	</center>
+<center>
+	<h1><%= resource.adaptTo(ValueMap.class).get("title") %></h1>
+</center>
 
 
 	<%

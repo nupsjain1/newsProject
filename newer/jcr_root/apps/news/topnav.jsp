@@ -3,16 +3,16 @@
 <nav style="top:10%" class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/home">Newer News</a>
+      <a class="navbar-brand" href="/content/newernews.html">Newer News</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="/home">Home</a></li>
-      <li><a href="/news/entertainment" >Entertainment</a></li>
-      <li><a href="/news/sports" >Sports</a></li>
-      <li><a href="/news/ttndigital" >TTN-Digital</a></li>
-      <li><a href="/news/health" >Health</a></li>
-      <li><a href="/news/lifestyle" >Lifestyle</a></li>
-      <li><a href="/news/education" >Education</a></li>
+      <li class="active"><a href="/content/newernews.html">Home</a></li>
+      <li><a href="/content/newernews/entertainment.html" >Entertainment</a></li>
+      <li><a href="/content/newernews/sports.html" >Sports</a></li>
+      <li><a href="/content/newernews/ttnd.html" >TTN-Digital</a></li>
+      <li><a href="/content/newernews/health.html" >Health</a></li>
+      <li><a href="/content/newernews/lifestyle.html" >Lifestyle</a></li>
+      <li><a href="/content/newernews/education.html" >Education</a></li>
     </ul>
   </div>
   <div id="top_login_outer" style="float: right">

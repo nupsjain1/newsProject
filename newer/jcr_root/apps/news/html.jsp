@@ -1,17 +1,14 @@
 
-<%@page session="true"
+<%@page session="false"
 	import="org.apache.sling.api.resource.*, javax.jcr.*"%>
 <%@taglib prefix="sling" uri="http://sling.apache.org/taglibs/sling"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <sling:defineObjects />
-<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>The Newer Times</title>
+
 </head>
-
 <body>
-
 	<%@include file="/apps/news/header.jsp"%>
 	<%@include file="/apps/news/topnav.jsp"%>
 	<br />

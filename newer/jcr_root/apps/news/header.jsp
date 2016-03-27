@@ -9,6 +9,7 @@
   <script src="/content/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="/content/js/script.js"></script>
+<script src="/content/js/googleplatform.js"></script>
 <link rel="stylesheet" type="text/css" href="/content/css/style.css">
 <style type="text/css">
 #left {
