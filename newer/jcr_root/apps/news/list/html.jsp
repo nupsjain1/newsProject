@@ -3,64 +3,141 @@
 <%@taglib prefix="sling" uri="http://sling.apache.org/taglibs/sling/1.0"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <sling:defineObjects />
-
+<head>
 <title>Newer Times|<%= resource.adaptTo(ValueMap.class).get("title") %></title>
-<center>
-	<h1><%= resource.adaptTo(ValueMap.class).get("title") %></h1>
-</center>
+<script src="https://apis.google.com/js/platform.js" async defer/>
+</script>
+<style>
+.category1 {
+	float: left;
+	margin: 10px;
+	text-align: Center;
+}
+</style>
+
+<script>
+	window.twttr = (function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+		if (d.getElementById(id))
+			return t;
+		js = d.createElement(s);
+		js.id = id;
+		js.src = "https://platform.twitter.com/widgets.js";
+		fjs.parentNode.insertBefore(js, fjs);
+
+		t._e = [];
+		t.ready = function(f) {
+			t._e.push(f);
+		};
+
+		return t;
+	}(document, "script", "twitter-wjs"));
+</script>
 
 
-<%
+</head>
+<body>
+
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id))
+				return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<%@include file="/apps/news/header.jsp"%>
+	<%@include file="/apps/news/topnav.jsp"%>
+	<br />
+	<br />
+	<div class="jumbotron">
+		<center>
+			<h1><%= resource.adaptTo(ValueMap.class).get("title") %></h1>
+		</center>
+	</div>
+	<%
 Iterator<Resource> resourceIterator = resource.listChildren();
-HttpSession session=request.getSession();
-if(session!=null && session.getAttribute("user")!=null&&session.getAttribute("user").equals("admin"))
+HttpSession sess=request.getSession();
+if(sess!=null && sess.getAttribute("user")!=null && sess.getAttribute("user").equals("admin"))
 {	
 	%><div class="news_listing">
-	<%
+		<%
 while (resourceIterator.hasNext()) {
 	 Resource childResource = resourceIterator.next();
 	 ValueMap vMap = childResource.adaptTo(ValueMap.class); 
 %>
-	<a href="<%=childResource.getPath()%>.html">
-		<div class="news">
-			<div class="title">
-				<span><h2><%=vMap.get("title",String.class) %></h2></span>
-				<div class="dateofpublish">
-					<span><%=vMap.get("dateofpublish",String.class) %></span>
-					<div class="desciption">
-						<span><%=vMap.get("description",String.class) %></span>
-						<div class="link">
-							<span> <a href="<%=vMap.get("link",String.class) %>">Follow
-									Up!</a>
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="category1 well">
+			<a href="<%=childResource.getPath()%>.html"><h2><%=vMap.get("title",String.class) %></h2></a>
+			<h3><%=vMap.get("dateofpublish",String.class) %></h3>
+			<p><%=vMap.get("description",String.class) %></p>
+			<span> <a href="<%=vMap.get("link",String.class) %>">Follow
+					Up!</a>
+			</span>
 			<div class="news_footer">
 				<div class="share">
 					<!-- Share buttons -->
 
-					<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-						<a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a
-							class="a2a_button_facebook"></a> <a class="a2a_button_twitter"></a>
-						<a class="a2a_button_google_plus"></a> <a
-							class="a2a_button_pinterest"></a> <a class="a2a_button_linkedin"></a>
-						<a class="a2a_button_reddit"></a>
-					</div>
-					<script async src="https://static.addtoany.com/menu/page.js"></script>
-
+					<div class="fb-share-button"
+						data-href="<%=childResource.getPath()%>.html" data-layout="button"></div>
+					<a href="https://twitter.com/share" class="twitter-share-button"
+						data-url="<%=childResource.getPath()%>.html">Tweet</a>
+					<g:plusone data-href="<%=childResource.getPath()%>.html"
+						expandTo="left" data-size="tall" data-annotation="bubble">
+					google</g:plusone>
 				</div>
 				<div class="edit">
-					<a href="<%=childResource.getPath()%>.edit.html">EDIT</a>
+					<a href="<%=childResource.getPath()%>.edit.html"><img
+						src="/content/images/edit.png"
+						height="30px" width="30px" />EDIT</a>
 				</div>
 			</div>
 		</div>
-	</a>
-	<%	
+
+		<%	
 }
 	%>
 	</div>
+	<a href="<%=resource.getPath()%>.add.html">ADD CUSTOM NEWS</a>
 	<%
+}else{
+%><div class="news_listing">
+		<%
+while (resourceIterator.hasNext()) {
+	 Resource childResource = resourceIterator.next();
+	 ValueMap vMap = childResource.adaptTo(ValueMap.class); 
+%>
+		<div class="category1 well">
+			<a href="<%=childResource.getPath()%>.html"><h2><%=vMap.get("title",String.class) %></h2></a>
+			<h3><%=vMap.get("dateofpublish",String.class) %></h3>
+			<p><%=vMap.get("description",String.class) %></p>
+			<span> <a href="<%=vMap.get("link",String.class) %>">Follow
+					Up!</a>
+			</span>
+
+			<div class="news_footer">
+				<div class="share">
+					<!-- Share buttons -->
+
+					<div class="fb-share-button"
+						data-href="<%=childResource.getPath()%>.html" data-layout="button"></div>
+					<a href="https://twitter.com/share" class="twitter-share-button"
+						data-url="<%=childResource.getPath()%>.html">Tweet</a>
+					<div class="g-plusone" href="<%=childResource.getPath()%>.html" data-size="tall" data-annotation="inline" data-width="300"></div>
+
+				</div>
+			</div>
+		</div>
+		<%	
 }
 %>
+	</div>
+	<%
+
+}%>
+	
+</body>
+<%@include file="/apps/news/footer.jsp"%>

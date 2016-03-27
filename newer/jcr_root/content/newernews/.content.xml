@@ -3,7 +3,8 @@
     xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="nt:unstructured"
-    sling:resourceType="news">
+    sling:resourceType="news"
+    sling:vanityPath="/home">
     
     <entertainment
         jcr:primaryType="nt:unstructured"
@@ -25,36 +26,180 @@
         	link="http://timesofindia.indiatimes.com/"
         	sling:resourceType="news/show"/>
         
-    <news_enter_2 
+	    <news_enter_2 
         	jcr:primaryType="nt:unstructured"
         	title="Ka and Ki Released"
         	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
         	dateofpublish="24/03/2016"
         	link="http://timesofindia.indiatimes.com/"
-        	sling:resourceType="news/show"/></entertainment>
+        	sling:resourceType="news/show"/>
+		<news_enter_3 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+        <news_enter_4 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+		<news_enter_5 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+    </entertainment>
 
     <sports
     	jcr:primaryType="nt:unstructured"
         sling:resourceType="news/list"
-        title="Sports"/>
+        title="Sports">
+    	<news_sports_0 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+        
+        <news_sports_1 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+        
+    	<news_sports_2 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+    
+    </sports>
 
     <ttnd 
     	jcr:primaryType="nt:unstructured"
         sling:resourceType="news/list"
-        title="TTND"/>
+        title="TTND">
+    	<news_ttnd_0 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+        
+        <news_ttnd_1 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+        
+   		<news_ttnd_2 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+    </ttnd>
 
     <health 
     	jcr:primaryType="nt:unstructured"
         sling:resourceType="news/list"
-        title="Health"/>
+        title="Health">
+    	<news_health_0 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+        
+        <news_health_1 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+        
+    	<news_health_2 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+    
+    </health>
 
     <lifestyle 
     	jcr:primaryType="nt:unstructured"
         sling:resourceType="news/list"
-        title="Lifestyle"/>
+        title="Lifestyle">
+    	<news_life_0 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+        
+        <news_life_1 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+        
+    	<news_life_2 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+    </lifestyle>
 
     <education 
     	jcr:primaryType="nt:unstructured"
         sling:resourceType="news/list"
-        title="Education"/>
+        title="Education">
+    	<news_edu_0 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+        
+        <news_edu_1 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+        
+    	<news_edu_2 
+        	jcr:primaryType="nt:unstructured"
+        	title="Ka and Ki Released"
+        	description="Today released film featuring Alia Bhatt Ranbir Kapoor and Some Other Useless actors"
+        	dateofpublish="24/03/2016"
+        	link="http://timesofindia.indiatimes.com/"
+        	sling:resourceType="news/show"/>
+    </education>
 </jcr:root>
