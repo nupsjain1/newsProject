@@ -48,7 +48,7 @@ line-height: 90px;
 
 .social .link span {
   display: block;
-  position: absolute;
+  position: relative;
   text-align: center;
   top: 50%;
   left: 50%;
@@ -79,8 +79,8 @@ line-height: 90px;
 
 
 #footer_outer{
- position:fixed;
- top:70%;
+ position:relative;
+ top:50%;
  left:0;
  width:100%;
  height:10%;
@@ -93,7 +93,9 @@ line-height: 90px;
 <div class="socialLinks">
 <div class="container">
   <div class="social">
-  <a href="http://facebook.com" class="link facebook" target="_parent"> <img src="/content/images/facebook.png" alt="Facebook" width="40" height="40" align="middle"></a>
+  <a href="http://facebook.com" class="link facebook" target="_parent"> <img src="/content/images/facebook.png" alt="Facebook" width="40" height="40" style="display: block ,
+    margin-left: auto ,
+    margin-right: auto"></a>
   <a href="https://twitter.com" class="link twitter" target="_parent"><img src="/content/images/twitter.jpeg" alt="Twitter" width="40" height="40" align="middle"></a>
   <a href="https://plus.google.com" class="link google-plus" target="_parent"><img src="/content/images/gplus.png" alt="Google-Plus" width="40" height="40" align="middle"></a>
 </div>
