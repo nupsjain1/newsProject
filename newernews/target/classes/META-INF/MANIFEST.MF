@@ -1,17 +1,21 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1459067844058
-Build-Jdk: 1.8.0_74
-Built-By: vikas
+Bnd-LastModified: 1459179092154
+Build-Jdk: 1.8.0_72
+Built-By: nupur
 Bundle-Description: com.ttnd - newernews
 Bundle-ManifestVersion: 2
 Bundle-Name: newernews
 Bundle-SymbolicName: com.ttnd.newernews
 Bundle-Version: 0.0.1.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
-Export-Package: com.ttnd.newernews;version="0.0.1";uses:="org.osgi.servi
- ce.component"
-Import-Package: org.osgi.framework;version="[1.5,2)",org.osgi.service.co
- mponent;version="[1.1,2)",org.slf4j;version="[1.7,2)"
+Export-Package: com.ttnd.newernews;version="0.0.1";uses:="org.apache.sli
+ ng.jcr.api,org.osgi.service.component"
+Import-Package: javax.jcr;version="[2.0,3)",javax.xml.namespace,javax.xm
+ l.stream,javax.xml.stream.events,org.apache.sling.jcr.api;version="[2.3
+ ,3)",org.apache.sling.jcr.resource;version="[2.3,3)",org.osgi.framework
+ ;version="[1.5,2)",org.osgi.service.component;version="[1.1,2)",org.slf
+ 4j;version="[1.7,2)"
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
-Service-Component: OSGI-INF/com.ttnd.newernews.SimpleDSComponent.xml
+Service-Component: OSGI-INF/com.ttnd.newernews.RssScheduler.xml,OSGI-INF
+ /com.ttnd.newernews.SimpleDSComponent.xml
 Tool: Bnd-3.0.0.201509101326

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0" immediate="true" name="com.ttnd.newernews.RssScheduler">
+    <implementation class="com.ttnd.newernews.RssScheduler"/>
+    <service servicefactory="false">
+        <provide interface="java.lang.Runnable"/>
+    </service>
+    <property name="scheduler.period" type="Long" value="30"/>
+    <property name="service.pid" value="com.ttnd.newernews.RssScheduler"/>
+    <reference name="repository" interface="org.apache.sling.jcr.api.SlingRepository" cardinality="1..1" policy="static" bind="bindRepository" unbind="unbindRepository"/>
+</scr:component>
