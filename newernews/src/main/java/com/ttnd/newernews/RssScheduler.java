@@ -24,7 +24,7 @@ import org.slf4j.LoggerFactory;
 
 @Component(immediate = true)
 @Service(java.lang.Runnable.class)
-@Property(name = "scheduler.period", longValue = 30)
+@Property(name = "scheduler.period", longValue = 6000)
 public class RssScheduler implements java.lang.Runnable {
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 

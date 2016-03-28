@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1459179092154
+Bnd-LastModified: 1459179201324
 Build-Jdk: 1.8.0_72
 Built-By: nupur
 Bundle-Description: com.ttnd - newernews

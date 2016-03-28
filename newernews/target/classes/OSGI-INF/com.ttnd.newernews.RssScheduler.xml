@@ -4,7 +4,7 @@
     <service servicefactory="false">
         <provide interface="java.lang.Runnable"/>
     </service>
-    <property name="scheduler.period" type="Long" value="30"/>
+    <property name="scheduler.period" type="Long" value="6000"/>
     <property name="service.pid" value="com.ttnd.newernews.RssScheduler"/>
     <reference name="repository" interface="org.apache.sling.jcr.api.SlingRepository" cardinality="1..1" policy="static" bind="bindRepository" unbind="unbindRepository"/>
 </scr:component>
